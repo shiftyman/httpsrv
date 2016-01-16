@@ -14,7 +14,7 @@ public class HttpServer {
 		int port = 8080;
 		int backlog = 8;
 		try{
-			serverSocker = new ServerSocket(port, backlog, InetAddress.getByName("127.0.0.1"));
+			serverSocker = new ServerSocket(port, backlog);
 		}catch(IOException e){
 			e.printStackTrace();
 			System.exit(1);
